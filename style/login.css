@@ -1,0 +1,44 @@
+.div2{
+    border: 5px solid rgb(207, 207, 207);
+    height: 40px;
+    width: 280px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(207, 207, 207);
+    text-align: left;
+}
+
+.text1{
+    color: rgb(142, 142, 142);
+    text-align: left;
+}
+
+.div3{
+    border: 5px solid rgb(207, 207, 207);
+    height: 20px;
+    width: 280px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+}
+
+
+.text2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.text3{
+    color: crimson;
+    text-align: center;
+    margin-right: 140px;
+    text-align: center;
+    height: 10%;
+    margin-bottom: 200px;
+}
+
+.div4{
+    block-size: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}

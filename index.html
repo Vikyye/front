@@ -3,40 +3,15 @@
     <head>
         <title>Solaris</title>
     </head>
-    <body>
-        <script>
-            /*fetch("https://crocsolaris.ru/api", {method: "get"})
-                .then(response => console.log(response.text()))
+    <script type="module">
+        import {hasActiveSession} from './script/session.js';
 
-            function register(uemail, uname, upassword) {
-                fetch("https://crocsolaris.ru/api/register", {
-                    method: "post",
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    //make sure to serialize your JSON body
-                    body: JSON.stringify({
-                        name: uname,
-                        password: upassword,
-                        email: uemail,
-                    })
-                }).then(response => console.log(response.text()))
-            }*/
-
-            function abobus() {
-                fetch("https://crocsolaris.ru/api")
-                .then(response => console.log(response.text()))
-            }
-
-            function amogus() {
-                alert("Закройте сайт и больше не приходет")
-            }
-        </script>
-
-        <img src="https://static.sobaka.ru/uploads/nsk/1.jpg" width="100px" />
-        <p><button onclick="abobus()">Привет</button></p>
-        <p><button onclick="amogus()" style="background-color: black; color: white;">Пока</button></p>
-
-    </body>
+        if (hasActiveSession()) {
+            console.log("Найдена активная сессия")
+            window.location.href = "/books.html"
+        } else {
+            console.log("Активная сессия не найдена, необходимо выполнить вход")
+            window.location.href = "/login.html"
+        }
+    </script>
 </html>
