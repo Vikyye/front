@@ -2,8 +2,32 @@
 <html>
     <head>
         <title>Мои книги</title>
+        <link rel="stylesheet" href="/style/books.css">
     </head>
     <body>
-        Ну пипец, что тут сказать
+        <div class="header">
+            <input type="text" class="search_input" placeholder="Какую книгу сегодня ищем?" >
+            <input type="button" id="to_profile" value="Мой акканут" />
+        </div>
+
+        <h4 style="background-color: #D8DFE530;">Моя библиотека</h4>
+        <div class="book_row" style="background-color: #D8DFE530;">
+            <p class="book">Курочка ряба</p>
+            <p class="book">Колобок</p>
+            <p class="book">Счастливое детство дельфина по имени Бенджамин Амогус Младший</p>
+        </div>
+
+        <h4 style="background-color: #8FABB730;">Забрали у меня</h4>
+        <div class="book_row" style="background-color: #8FABB730;">
+            <p class="book">Курочка ряба</p>
+        </div>
+        
+        <h4 style="background-color: #46656F30;">Забрал я</h4>
+        <div class="book_row" style="background-color: #46656F30;">
+            <p class="book_fake_filler">Тут пока пусто</p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/script/books.js" type="module"></script>
     </body>
 </html>
