@@ -12,20 +12,20 @@
         </div>
 
         <h4 style="background-color: #D8DFE530;">Моя библиотека</h4>
-        <div class="book_row" style="background-color: #D8DFE530;">
-            <p class="book">Курочка ряба</p>
-            <p class="book">Колобок</p>
-            <p class="book">Счастливое детство дельфина по имени Бенджамин Амогус Младший</p>
+        <div class="book_row" id="my" style="background-color: #D8DFE530;">
+            <button class="plus" id="add_book">+</button>
+            <p class="book_fake_filler" id="my_placeholder"></p>
         </div>
 
         <h4 style="background-color: #8FABB730;">Забрали у меня</h4>
-        <div class="book_row" style="background-color: #8FABB730;">
-            <p class="book">Курочка ряба</p>
+        <div class="book_row" id="giver" style="background-color: #8FABB730;">
+            <button class="plus" id="share_book">+</button>
+            <p class="book_fake_filler" id="giver_placeholder"></p>
         </div>
         
         <h4 style="background-color: #46656F30;">Забрал я</h4>
-        <div class="book_row" style="background-color: #46656F30;">
-            <p class="book_fake_filler">Тут пока пусто</p>
+        <div class="book_row" id="taker" style="background-color: #46656F30;">
+            <p class="book_fake_filler"id="taker_placeholder">Тут пока пусто</p>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

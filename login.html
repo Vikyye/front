@@ -8,17 +8,17 @@
         <form style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
             <h1>Добро пожаловать</h1>
             <label id="name_label" for="name">Введите имя</label>
-            <input type="text" id="name" name="name" required="false">
+            <input type="text" id="name" name="name">
             <label for="email">Введите почту</label>
-            <input type="email" id="email" name="email" required="true">
+            <input type="email" id="email" name="email">
             <label for="password">Введите пароль</label>
-            <input type="password" id="password" name="password" required="true">
+            <input type="password" id="password" name="password">
             <label id="password_repeat_label" for="password_repeat">Повторите пароль</label>
-            <input type="password" id="password_repeat" name="password_repeat" required="false">
-            <input id="submit" type="submit" value="Войти">
+            <input type="password" id="password_repeat" name="password_repeat">
+            <input id="submit" type="button" value="Войти">
             <p id="change_mode">Ещё нет аккаунта? Зарегестрируйтесь</p>
         </form>
         
-        <script src="script/login.js" type="module"></script>
+        <script src="/script/login.js" type="module"></script>
     </body>
 </html>

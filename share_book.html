@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Поделиться книгой</title>
+    </head>
+    <body>
+        <form style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <h1>Давайте поделимся книгой</h1>
+            <label for="book">Что за книга</label>
+            <select name="book" id="book"></select>
+            <label for="taker">Кому отдать</label>
+            <select name="taker" id="taker"></select>
+            <label for="return">Когда вернуть</label>
+            <input type="date" id="return" name="return">
+
+            <input id="submit" type="button" value="Отдать">
+        </form>
+        
+        <script src="/script/share_book.js" type="module"></script>
+    </body>
+</html>
